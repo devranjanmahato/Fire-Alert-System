@@ -8,10 +8,10 @@ Fire_Reported = 0
 Alarm_Status = False
 
 def message():                                              # Message that will be sent to phone when fire will dectect.
-    account_sid = "ACd434ba7c7576c7203dea21dce034eeb7"
-    auth_token = "d009a56eea1fddb10fdaee5f3c4e17d5"
+    account_sid = "Your Account SID as in twilio"
+    auth_token = "Your authority token as in twilio"
     client = Client(account_sid, auth_token)
-    client.messages.create(from_="+17047537755", body="FIRE!!! FIRE!!! FIRE!!!", to=["+916370874452"])
+    client.messages.create(from_="Sender Number with country code", body="FIRE!!! FIRE!!! FIRE!!!", to=["Receiver Number with country code"])
 
 
 
